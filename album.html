@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Álbum de fotos — Doutor Firewall, Candidato 26</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- BARRA DE STATUS -->
+  <div class="status-bar">
+    <span class="status-bar__prompt">$ ./campanha --candidato doutor-firewall</span>
+    <span class="status-bar__badge"><span class="status-bar__dot"></span>ONLINE</span>
+  </div>
+
+  <!-- MENU -->
+  <header class="site-header">
+    <a href="index.html" class="logo">DR<span>_</span>FIREWALL</a>
+    <nav class="command-nav">
+      <ul>
+        <li><a href="index.html">cd /</a></li>
+        <li><a href="historia.html">cd /historia</a></li>
+        <li><a href="propostas.html">cd /propostas</a></li>
+        <li><a href="agenda.html">cd /agenda</a></li>
+        <li><a href="album.html" class="active">cd /album</a></li>
+        <li><a href="jingle.html">cd /jingle</a></li>
+        <li><a href="contato.html">cd /contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INTRODUÇÃO -->
+    <section class="page-intro">
+      <p class="teaser__label">&gt; album.log</p>
+      <h1>Álbum de fotos</h1>
+      <p>
+        Alguns momentos da trajetória do candidato 26, registrados (e
+        provavelmente com backup em nuvem).
+      </p>
+    </section>
+
+    <!-- GRADE DE FOTOS -->
+    <section class="album">
+      <div class="album__grid">
+
+        <figure class="photo-item">
+          <div class="photo-item__frame">
+            <img src="imagens/foto-01.jpg" alt="descrição da foto">
+          </div>
+          <figcaption>Primeiro contato com um PC quebrado, anos atrás.</figcaption>
+        </figure>
+
+        <figure class="photo-item">
+          <div class="photo-item__frame">
+            <img src="imagens/foto-02.jpg" alt="descrição da foto">
+          </div>
+          <figcaption>Quando jovem, era o técnico da rua. Consertava tudo o que aparecia em troca de um pedaço de bolo.
+          </figcaption>
+        </figure>
+
+        <figure class="photo-item">
+          <div class="photo-item__frame">
+            <img src="imagens/foto-03.jpeg" alt="descrição da foto">
+          </div>
+          <figcaption>Quando jovem já era fascinado por computadores e tudo relacionado a tecnologia.</figcaption>
+        </figure>
+
+        <figure class="photo-item">
+          <div class="photo-item__frame">
+            <img src="imagens/foto-04.jpg" alt="descrição da foto">
+          </div>
+          <figcaption>Dr. Firewall com sua família.</figcaption>
+        </figure>
+
+        <figure class="photo-item">
+          <div class="photo-item__frame">
+            <img src="imagens/foto-05.jpg" alt="descrição da foto">
+          </div>
+          <figcaption>Trabalhando em prol da comunidade!</figcaption>
+        </figure>
+
+        <figure class="photo-item">
+          <div class="photo-item__frame">
+            <img src="imagens/foto-06.jpeg" alt="descrição da foto">
+          </div>
+          <figcaption>Dr. Firewall em campanha.</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <p class="page-nav-next">
+      <a href="jingle.html" class="link-arrow">ouvir (ler) o jingle da campanha →</a>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <p>@doutorfirewall · sistema operando desde 2026</p>
+    <p class="site-footer__small">Campanha fictícia — Atividade de Desenvolvimento Web, IFPR.</p>
+  </footer>
+
+</body>
+
+</html>
