@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda — Doutor Firewall, Candidato 26</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BARRA DE STATUS -->
+  <div class="status-bar">
+    <span class="status-bar__prompt">$ ./campanha --candidato doutor-firewall</span>
+    <span class="status-bar__badge"><span class="status-bar__dot"></span>ONLINE</span>
+  </div>
+
+  <!-- MENU -->
+  <header class="site-header">
+    <a href="index.html" class="logo">DR<span>_</span>FIREWALL</a>
+    <nav class="command-nav">
+      <ul>
+        <li><a href="index.html">cd /</a></li>
+        <li><a href="historia.html">cd /historia</a></li>
+        <li><a href="propostas.html">cd /propostas</a></li>
+        <li><a href="agenda.html" class="active">cd /agenda</a></li>
+        <li><a href="album.html">cd /album</a></li>
+        <li><a href="jingle.html">cd /jingle</a></li>
+        <li><a href="contato.html">cd /contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INTRODUÇÃO -->
+    <section class="page-intro">
+      <p class="teaser__label">&gt; agenda.log</p>
+      <h1>Agenda de campanha</h1>
+      <p>
+        Próximos compromissos do candidato 26 pela cidade. Sem atraso,
+        sem travamento.
+      </p>
+    </section>
+
+    <!-- TABELA DE AGENDA -->
+    <section class="agenda">
+      <div class="agenda__table-wrap">
+        <table class="agenda__table">
+          <thead>
+            <tr>
+              <th scope="col">Data</th>
+              <th scope="col">Horário</th>
+              <th scope="col">Evento</th>
+              <th scope="col">Local</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Data">22/06/2026</td>
+              <td data-label="Horário">14h00</td>
+              <td data-label="Evento">Comício de lançamento &ldquo;Reboot da Cidade&rdquo;</td>
+              <td data-label="Local">Praça Central</td>
+            </tr>
+            <tr>
+              <td data-label="Data">25/06/2026</td>
+              <td data-label="Horário">19h00</td>
+              <td data-label="Evento">Debate com outros candidatos</td>
+              <td data-label="Local">Auditório Municipal</td>
+            </tr>
+            <tr>
+              <td data-label="Data">28/06/2026</td>
+              <td data-label="Horário">10h00</td>
+              <td data-label="Evento">Inauguração do Wi-Fi da Praça das Acácias</td>
+              <td data-label="Local">Praça das Acácias</td>
+            </tr>
+            <tr>
+              <td data-label="Data">02/07/2026</td>
+              <td data-label="Horário">16h00</td>
+              <td data-label="Evento">Hackathon comunitário &ldquo;Cidade 2.0&rdquo;</td>
+              <td data-label="Local">Centro de Inovação</td>
+            </tr>
+            <tr>
+              <td data-label="Data">05/07/2026</td>
+              <td data-label="Horário">09h00</td>
+              <td data-label="Evento">Visita à Escola Municipal Ada Lovelace</td>
+              <td data-label="Local">Escola Municipal Ada Lovelace</td>
+            </tr>
+            <tr>
+              <td data-label="Data">09/07/2026</td>
+              <td data-label="Horário">18h30</td>
+              <td data-label="Evento">Live de prestação de contas da campanha</td>
+              <td data-label="Local">Canal oficial @doutorfirewall</td>
+            </tr>
+            <tr>
+              <td data-label="Data">12/07/2026</td>
+              <td data-label="Horário">11h00</td>
+              <td data-label="Evento">Mutirão de manutenção de computadores doados</td>
+              <td data-label="Local">Centro Comunitário</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <p class="page-nav-next">
+      <a href="album.html" class="link-arrow">ver o álbum de fotos →</a>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <p>@doutorfirewall · sistema operando desde 2026</p>
+    <p class="site-footer__small">Campanha fictícia — Atividade de Desenvolvimento Web, IFPR.</p>
+  </footer>
+
+</body>
+</html>

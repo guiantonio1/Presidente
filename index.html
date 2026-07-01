@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doutor Firewall — Candidato 26</title>
+
+  <!--
+    TÉCNICAS USADAS NESTA PÁGINA (pra te ajudar a justificar na apresentação,
+    caso alguma ainda não tenha sido vista em aula):
+    - Variáveis CSS (custom properties, :root)
+    - Flexbox e CSS Grid para layout
+    - @keyframes (animação do cursor piscando na status bar)
+    - clip-path (cunha verde no canto do cartaz)
+    - Google Fonts importadas via <link>
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BARRA DE STATUS (estilo terminal) -->
+  <div class="status-bar">
+    <span class="status-bar__prompt">$ ./campanha --candidato doutor-firewall</span>
+    <span class="status-bar__badge"><span class="status-bar__dot"></span>ONLINE</span>
+  </div>
+
+  <!-- MENU DE NAVEGAÇÃO -->
+  <header class="site-header">
+    <a href="index.html" class="logo">DR<span>_</span>FIREWALL</a>
+    <nav class="command-nav">
+      <ul>
+        <li><a href="index.html" class="active">cd /</a></li>
+        <li><a href="historia.html">cd /historia</a></li>
+        <li><a href="propostas.html">cd /propostas</a></li>
+        <li><a href="agenda.html">cd /agenda</a></li>
+        <li><a href="album.html">cd /album</a></li>
+        <li><a href="jingle.html">cd /jingle</a></li>
+        <li><a href="contato.html">cd /contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO: CARTAZ DE CAMPANHA -->
+    <section class="hero">
+      <div class="hero__text">
+        <p class="hero__role">/* Guardião Digital da Cidade */</p>
+        <p class="hero__slogan">&ldquo;Sem bugs, só soluções pra cidade.&rdquo;</p>
+        <a href="propostas.html" class="btn">VOTAR 26 →</a>
+      </div>
+
+      <div class="poster">
+        <p class="poster__name">DOUTOR<br>FIREWALL</p>
+
+        <div class="poster__photo-frame">
+          <svg class="poster__rays" viewBox="0 0 320 320" aria-hidden="true">
+            <g class="poster__rays-group">
+              <!-- raios de energia gerados em leque -->
+              <polygon points="160,160 150,0 170,0" />
+              <polygon points="160,160 230,10 245,25" />
+              <polygon points="160,160 290,70 300,90" />
+              <polygon points="160,160 320,150 320,170" />
+              <polygon points="160,160 300,250 285,265" />
+              <polygon points="160,160 240,310 220,318" />
+              <polygon points="160,160 90,310 110,318" />
+              <polygon points="160,160 30,250 15,265" />
+              <polygon points="160,160 0,150 0,170" />
+              <polygon points="160,160 20,70 35,55" />
+              <polygon points="160,160 90,10 105,18" />
+            </g>
+          </svg>
+
+          <!-- ESPAÇO RESERVADO: troquem este <div> por <img src="sua-foto.png" alt="Doutor Firewall"> -->
+          <div class="poster__photo-placeholder">
+            <span>imagem do<br>candidato aqui</span>
+          </div>
+        </div>
+
+        <div class="poster__badge">
+          <span class="poster__badge-label">CANDIDATO</span>
+          <span class="poster__badge-number">26</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEASER: SOBRE -->
+    <section class="teaser">
+      <p class="teaser__label">&gt; sobre.exe</p>
+      <h2>Quem é Doutor Firewall?</h2>
+      <p>
+        Nascido consertando o computador dos vizinhos de graça, o Doutor
+        Firewall ficou conhecido por debugar o site da prefeitura depois
+        de 3 anos fora do ar. Agora quer dar um update geral na cidade.
+      </p>
+      <a href="historia.html" class="link-arrow">ler história completa →</a>
+    </section>
+
+    <!-- TEASER: PROPOSTAS -->
+    <section class="teaser teaser--alt">
+      <p class="teaser__label">&gt; propostas.log</p>
+      <h2>Algumas propostas</h2>
+      <div class="card-grid">
+        <article class="card">
+          <span class="card__tag">#mobilidade</span>
+          <p>Multa para semáforo que demora mais que 3 segundos pra abrir.</p>
+        </article>
+        <article class="card">
+          <span class="card__tag">#transparência</span>
+          <p>Captcha obrigatório antes de qualquer político fazer promessa.</p>
+        </article>
+        <article class="card">
+          <span class="card__tag">#serviços</span>
+          <p>Fila do INSS com barra de progresso em tempo real.</p>
+        </article>
+      </div>
+      <a href="propostas.html" class="link-arrow">ver todas as propostas →</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>@doutorfirewall · sistema operando desde 2026</p>
+    <p class="site-footer__small">Campanha fictícia — Atividade de Desenvolvimento Web, IFPR.</p>
+  </footer>
+
+</body>
+</html>
